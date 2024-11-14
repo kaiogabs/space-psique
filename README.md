@@ -22,4 +22,5 @@ O objetivo do projeto é proporcionar uma experiência prática e colaborativa p
 |------------|--------|---------|
 | 👨‍💻 José Lucas Pereira de Andrade | Developer | [GitHub](https://github.com/Jose1Lucas)  <br> [LinkedIn](https://www.linkedin.com/in/jos%C3%A9-lucas-b823b8283/) |
 | 👨‍💻 Wesley Nascimento Santos | Developer | [GitHub](https://github.com/Wesleypk)  <br> [LinkedIn](https://www.linkedin.com/in/wesley-nascimento-santos) |
+| 👨‍💻 Marco Tulio da Silva Rocha | Developer | [GitHub](https://github.com/)  <br> [LinkedIn](https://www.linkedin.com/in/) |
 </div>
