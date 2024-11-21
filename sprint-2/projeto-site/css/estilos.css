@@ -1,0 +1,241 @@
+/* Carregando as fontes Montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100 900;
+    src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 100 900;
+    src: url('fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    font-display: swap;
+}
+
+/* Estilo base */
+body {
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    transition: background-color 0.5s ease;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #bd8857;
+}
+
+.logo-container img {
+    max-height: 80px;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+}
+
+.links-container a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 10px;
+    font-size: 1rem;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+/* Base para o contêiner do formulário e imagem */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaço entre o formulário e a imagem */
+    margin-top: 20px; /* Espaçamento entre o texto e o conteúdo */
+}
+
+/* Imagem à direita do formulário */
+.content-wrapper.right {
+    flex-direction: row;
+}
+
+.content-wrapper.right .image-container {
+    order: 1; /* Mantém a imagem à direita */
+}
+
+/* Imagem à esquerda do formulário */
+.content-wrapper.left {
+    flex-direction: row-reverse;
+}
+
+.content-wrapper.left .image-container {
+    order: 1; /* Mantém a imagem à esquerda */
+}
+
+/* Imagem acima do formulário */
+.content-wrapper.above {
+    flex-direction: column;
+}
+
+.content-wrapper.above .image-container {
+    order: -1; /* Coloca a imagem acima do formulário */
+}
+
+/* Imagem abaixo do formulário */
+.content-wrapper.below {
+    flex-direction: column;
+}
+
+.content-wrapper.below .image-container {
+    order: 1; /* Coloca a imagem abaixo do formulário */
+}
+
+/* Ajuste da imagem */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Para deixar a imagem circular */
+    max-height: 400px; /* Limite máximo de altura */
+}
+
+
+.links-container a:hover,
+.links-container a.active {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.agendar-sessao {
+    padding: 10px 20px;
+    color: #bd8857;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.agendar-sessao:hover {
+    background-color: #bd8857;
+}
+
+/* Seção Home */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #f7e6d7;
+    min-height: 100vh;
+}
+
+/* Coluna de texto e formulário juntos */
+.home-left {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.home-left h2 {
+    font-size: 2.5rem;
+    color: #9b2642;
+    margin-bottom: 20px;
+}
+
+.home-left blockquote {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #6c3a3a;
+    margin-bottom: 20px;
+}
+
+.home-left p {
+    font-size: 1.2rem;
+    color: #6c3a3a;
+    margin-bottom: 30px;
+}
+
+/* Formulário */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #9b2642;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #6c3a3a;
+}
+
+/* Seções adicionais */
+section {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+#servicos, #porque-fazer, #contato, #psicologos, #duvidas {
+    background-color: #f7e6d7;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: inherit;
+}
+
+section p, section ul {
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #home {
+        padding-top: 30px;
+    }
+
+    .home-left {
+        align-items: center;
+        text-align: center;
+    }
+}
