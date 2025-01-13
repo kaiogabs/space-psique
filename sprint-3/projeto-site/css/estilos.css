@@ -1,0 +1,780 @@
+/* Carregando as fontes Montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100 900;
+    src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 100 900;
+    src: url('fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    font-display: swap;
+}
+
+/* Estilo base */
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #bd8857;
+    transition: background-color 0.5s ease;
+
+}
+
+/* Navegação */
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #bd8857;
+    margin-bottom: 0;
+    
+} */
+
+.agendar{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    max-height: 80px;
+}
+
+.links-container {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.links-container a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;   
+    font-size: 1rem;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+/* Base para o contêiner do formulário e imagem */
+.content-wrapper {
+    /* display: flex; */
+    align-items: center;
+    gap: 20px; /* Espaço entre o formulário e a imagem */
+    margin-top: 20px; /* Espaçamento entre o texto e o conteúdo */
+}
+
+/* Imagem à direita do formulário */
+.content-wrapper.right {
+    flex-direction: row;
+}
+
+.content-wrapper.right .image-container {
+    order: 1; /* Mantém a imagem à direita */
+}
+
+/* Imagem à esquerda do formulário */
+.content-wrapper.left {
+    flex-direction: row-reverse;
+}
+
+.content-wrapper.left .image-container {
+    order: 1; /* Mantém a imagem à esquerda */
+}
+
+/* Imagem acima do formulário */
+.content-wrapper.above {
+    flex-direction: column;
+}
+
+.content-wrapper.above .image-container {
+    order: -1; /* Coloca a imagem acima do formulário */
+}
+
+/* Imagem abaixo do formulário */
+.content-wrapper.below {
+    flex-direction: column;
+}
+
+.content-wrapper.below .image-container {
+    order: 1; /* Coloca a imagem abaixo do formulário */
+}
+
+/* Ajuste da imagem */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Para deixar a imagem circular */
+    max-height: 400px; /* Limite máximo de altura */
+}
+
+
+.links-container a:hover,
+.links-container a.active {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.agendar-sessao {
+    padding: 10px 20px;
+    color: #bd8857;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+    background: rgba(0, 0, 0, 1);
+    display: inline-block;
+    color: whitsmoke;
+}
+
+.agendar-sessao:hover {
+    background-color: #800040;
+}
+
+/* Seção Home */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: #f7e6d7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.psicologos-container{
+    display: flex;   
+    background-color: #f7e6d7;
+    justify-content: center;
+    align-items: center; 
+    gap: 0px;    
+    min-height: 80vh;
+    padding-top: 80px; 
+    padding-bottom: 0px;    
+    flex-direction: row;
+    align-items: flex-start;
+    
+   
+}
+.psicologos-container p{ 
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+    max-width: 500px;
+}
+
+
+.psicologos-container h3 {
+    margin-left: 40px;
+    margin-bottom: 0;
+
+    margin-top: 0;
+    font-size: 2.5rem;   
+    color: #800040;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.atendimento-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Adaptação para telas menores */
+}
+
+.atendimento-image {
+    flex: 1;
+    max-width: 400px;
+}
+
+.atendimento-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.atendimento-text {
+    flex: 2;
+}
+
+.atendimento-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #800040;
+    margin-bottom: 20px;
+}
+
+.atendimento-text h1 .highlight {
+    color: #800040;
+}
+
+.atendimento-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.beneficio {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.beneficio .icon {
+    font-size: 1.5rem;
+    color: #800040;
+}
+
+.beneficio strong {
+    font-size: 1.1rem;
+    color: #800040;
+}
+
+.beneficio p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333333;
+}
+
+.btn-agendar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #800040;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-agendar:hover {
+    background-color
+    : #0c0c0c;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #atendimento-online {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .atendimento-container {
+        flex-direction: column;
+    }
+
+    .atendimento-image,
+    .atendimento-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .beneficio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .beneficio .icon {
+        margin-bottom: 10px;
+    }
+}
+
+/* Seções adicionais */
+ section {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display:flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: inherit;
+}
+
+section p, section ul {
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+#servicos, #porque-fazer, #contato, #psicologos, #duvidas {
+    background-color: #f7e6d7;
+    text-decoration: none;
+    color: #800040;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .home {
+        padding-top: 30px;
+    }
+
+    .home-left {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Estilo para o container de serviços */
+.servicos-container {
+    display: flex; /* Coloca os itens lado a lado */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    gap: 30px; /* Espaçamento entre os itens */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 20px auto; /* Adiciona espaçamento e centraliza */
+}
+
+/*SERVICOS*/
+/* Header da seção */
+.servicos-header {
+    text-align: justify;
+    margin-bottom: 60px;
+}
+
+.subtitulo-servicos {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #800040;
+    margin-bottom: 10px;
+    
+}
+
+.servicos-header .agendar-sessao {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: 800040(0, 0, 0, 1);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Título centralizado acima das imagens */
+.servicos-titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo-servicos {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #800040;
+    margin: 0;
+}
+
+/* Container das imagens */
+.servicos-container {
+    display: flex; /* Organiza os itens em linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 40px; /* Espaçamento entre as imagens */
+    margin-top: 20px;
+}
+
+/* Cada serviço individual */
+.servico-box {
+    text-align: center;
+    flex-direction: column;
+    max-width: 150px; /* Largura fixa para os itens */
+}
+
+/* Imagens */
+.servico-box img {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Legenda abaixo da imagem */
+.servico-box .legenda {
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #800040;
+}
+
+/* Texto explicativo */
+.texto-explicativo {
+    margin-top: 40px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.texto-explicativo h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #800040;
+}
+
+.texto-explicativo p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #000000;
+    text-align: justify;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .servicos-container {
+        flex-direction: column; /* Coloca os itens em coluna no mobile */
+        align-items: center;
+        gap: 20px; /* Reduz o espaçamento */
+    }
+
+    .servico-box {
+        max-width: 100%;
+    }
+}
+/*SERVICOS*/
+
+/*PORQUE FAZER*/
+/* Títulos e subtítulos */
+.titulo-porque {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #800040;
+    margin-bottom: 10px;
+}
+
+.subtitulo-porque {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #800040;
+    margin-bottom: 20px;
+}
+
+/* Grid de itens */
+.grid-porque {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Cinco colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.grid-porque .item {
+    background-color: #f8ecee; /* Cor de fundo */
+    color: #000000; /* Cor do texto */
+    border: 2px solid #000000; /* Borda */
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.grid-porque .item:hover {
+    background-color: #800040; /* Fundo ao passar o mouse */
+    color: #fff; /* Texto branco */
+    transform: scale(1.05); /* Leve zoom */
+}
+
+/* Texto e botão de chamada para ação */
+.cta-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-text {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.agendar-sessao {
+    display: inline-block;
+    background-color: #800040;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.agendar-sessao:hover {
+    background-color: #800040; /* Cor de destaque no hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .grid-porque {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas no mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-porque {
+        grid-template-columns: 1fr; /* Uma coluna no mobile menor */
+    }
+}
+/*PORQUE FAZER*/
+
+/* Estilo para Nossos Profissionais */
+#psicologos {
+    background-color: #f7e6d7; /* Cor de fundo */
+    padding: 40px 20px;
+    text-align: center;
+    color: #800040;
+}
+
+#psicologos .servicos-container {
+    display: flex; /* Flexbox para alinhar em linha */
+    justify-content: center; /* Centraliza os itens */
+    gap: 40px; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+}
+
+#psicologos .box {
+    text-align: center;
+    max-width: 200px;
+}
+
+#psicologos .box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#psicologos .box h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #800040; /* Cor do título */
+}
+
+#psicologos .box p {
+    font-size: 1rem;
+    color: #800040; /* Cor da descrição */
+}
+
+section.duvidas {
+    background-color: #f0e6da; /* Troque este código por outro se necessário */
+    padding: 40px;
+    color: #800040; /* Texto escuro para contraste */
+    border-radius: 8px; /* Bordas arredondadas, opcional */
+    font-family: Arial, sans-serif; /* Adicione o mesmo estilo da FAQ */
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.faq-question {
+    background-color: #ffffff;
+    color: #800040;
+    border: none;
+    text-align: left;
+    font-size: 1rem;
+    width: 100%;
+    cursor: pointer;
+    padding: 0.5rem;
+    outline: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #f0f0f0;
+}
+
+.faq-answer {
+    display: none; /* Escondida por padrão */
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #000000;
+    padding: 0.75rem; /* Adiciona um espaçamento interno */
+    border-left: 4px solid #800040; /* Borda lateral esquerda com destaque */
+    background-color: #ffffff; /* Cor de fundo sutil */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+
+/*Alinhar imagens dentro das div verticalmente*/
+/* div.box {
+    width: 200px;
+    display: inline-block;
+} */
+
+.freud-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.foto-psicologos{
+    margin-bottom: 0px;
+    margin-left: 0px;
+    /* border-radius: 5px; */
+    
+}
+.foto-psicologos img{
+    vertical-align: top;
+    border-radius: 7px;
+}
+
+.btn-psicologos{
+    display: inline-block;
+    margin-top: 100px;
+    padding: 15px 30px;
+    background-color: #800040;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-psicologos:hover {
+    background-color: #0c0c0c;
+}
+.div-btn-psicologos{
+    display: flex;
+    justify-content: center;
+}
+
+.nossos-profissionais-container{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+#psicologos a{
+    text-decoration: none;
+    color: #800040;
+}
+
+footer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .developers {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .developer {
+    text-align: center;
+  }
+  
+  .developer p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .social-logo {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0073b1; /* Cor azul padrão do LinkedIn */
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #005582;
+  }
+  
