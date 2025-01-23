@@ -1,6 +1,6 @@
 <p align="center">
 <p align="center">
-<img src="https://i.imgur.com/JN6RxJi.png" height="100" style="max-width: 100%;">
+<img src="https://i.imgur.com/yXjnNFQ.png" height="100" style="max-width: 100%;">
 </p>
 
 <div align="center">
@@ -81,12 +81,14 @@ A landing page do projeto "Espaço Psique" foi projetada para ser a porta de ent
 
 <h2> 🗂 Descrição das Pastas</h2>
 
+```plaintext
 - **📂 bat/**: Scripts e configurações auxiliares, como o envio de formulários.
 - **📂 css/**: Arquivos CSS para estilização do site.
 - **📂 fonts/**: Fontes personalizadas e ícones usados no projeto.
 - **📂 images/**: Recursos visuais, incluindo logotipos, ícones e imagens de conteúdo.
 - **📂 js/**: Scripts JavaScript para funcionalidades e interações do site.
 - **📂 bat/phpmailer/**: Biblioteca para o envio de e-mails via formulário de contato.
+```
 
 <div align="center">
   <h2>👥 Equipe do Projeto</h2>
